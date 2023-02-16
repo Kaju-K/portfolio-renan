@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Twitch Screens | FrowzySquirrel",
+        "year": 2022,
+        "src": "videos/Twitch_Screens_FrowzySquirrel.mp4",
+        "categories": ["character-animation", "character-design", "vector-illustration"],
+        "type": "Comissined Work"
+    },
+    {
+        "name": "Yakka Dee",
+        "year": 2021,
+        "src": "videos/yakka_dee.mp4",
+        "categories": ["character-animation"],
+        "type": "BBC"
+    },
+    {
+        "name": "People Scope",
+        "year": 2016,
+        "src": "videos/people_scope.mp4",
+        "categories": ["motion-graphics", "vector-illustration"],
+        "type": "IBOPE"
+    },
+    {
+        "name": "Change Doesn't Happen Alone",
+        "year": 2021,
+        "src": "videos/change-doesnt-happen-alone.mp4",
+        "categories": ["character-animation"],
+        "type": "United Way"
+    },
+    {
+        "name": "Tall Stumpy Short Dazerin",
+        "year": 2022,
+        "src": "videos/tall-stumpy-short-dazerin.mp4",
+        "categories": ["character-animation", "character-design"],
+        "type": "Rocket League Esports"
+    },
+    {
+        "name": "The Down Traditional Full Animation",
+        "year": 2018,
+        "src": "videos/the-down-traditional-full-animation.mp4",
+        "categories": ["character-animation", "character-design"],
+        "type": "Personal Project"
+    }
+]

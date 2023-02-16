@@ -1,0 +1,36 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 4rem 1.8rem 2rem;
+    z-index: 10;
+    position: fixed;
+    opacity: 0.9;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.navigation-logo {
+    height: 3rem;
+}
+
+.navigation-logo:hover {
+    filter: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="000000" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.80392 0 0 0 0 0.40784 0 0 0 0 0.22353 0 0 0 1 0"/></filter></defs></svg>#000000');
+}
+
+.navigation-tags {
+    display: flex;
+    gap: 4rem;
+}
+
+.navigation-tags a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.navigation-tags a:hover {
+    color: #cd6839;
+}

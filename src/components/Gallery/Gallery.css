@@ -1,0 +1,40 @@
+.gallery {
+    position: relative;
+    background-color: #101010;
+    padding-top: 115px;
+    margin: 0;
+}
+
+.gallery-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.gallery-button {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.gallery-button:hover {
+    border: 1px solid white;
+}
+
+.gallery-button-pressed {
+    border: 1px solid white;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 7.5px;
+}
+

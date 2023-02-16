@@ -1,0 +1,5 @@
+.contact-field textarea {
+    resize: vertical;
+    font-family: inherit;
+    min-height: 1.75rem;
+}

@@ -1,0 +1,41 @@
+.videos a {
+    position: relative;
+    width: calc(100%/3);
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.videos a video {
+    max-width: 100%;
+}
+
+.video-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.video-hover h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.video-hover h4 {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.videos a:hover .video-hover {
+    opacity: 0.9;
+}

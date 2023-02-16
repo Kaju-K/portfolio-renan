@@ -1,0 +1,55 @@
+.about-me {
+    background-color: #101010;
+    text-align: center;
+    padding-top: 115px;
+    color: #c0c0c0;
+}
+
+.about-me__photo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.about-me-description {
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.description-greetings {
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+}
+
+.description-title {
+    margin: 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ff6a2f;
+    padding: 0 3rem;
+}
+
+.description-text {
+    text-align: justify;
+    line-height: 1.7rem;
+    padding: 0 3rem;
+}
+
+.description__link {
+    text-decoration: underline;
+    color: white;
+    font-weight: 500;
+}
+
+.description__link:hover {
+    color: #cd6839;
+}
+
+.description-division {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 3rem 12%;
+}

@@ -1,0 +1,57 @@
+footer {
+    position: relative;
+    background-color: #101010;
+    color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 5.3rem 0;
+}
+
+.footer-image {
+    width: 260px;
+}
+
+.footer-image:hover {
+    filter: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="000000" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.80392 0 0 0 0 0.40784 0 0 0 0 0.22353 0 0 0 1 0"/></filter></defs></svg>#000000');
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #777;
+}
+
+.footer-text a:hover {
+    color: #cd6839;
+}
+
+.footer-social-medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-media {
+    font-size: 2rem;
+    color: #777;
+}
+
+.social-media:hover {
+    color: #cd6839;
+}
+
+.footer-arrow-up {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    color: white;
+    margin: 5px;
+}
+
+.footer-arrow-up:hover {
+    color: #cd6839;
+}
