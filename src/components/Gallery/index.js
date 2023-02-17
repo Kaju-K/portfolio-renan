@@ -25,47 +25,17 @@ function Gallery({ works }) {
           },
           animation: {
             effects: 'fade translateX(-100px)',
-            duration: 100
+            duration: 500,
           }
         });
     }, []);
-
-    let selectedFilters = 0
-
-    function galleryButtonClick(event) {
-        console.log(event)
-        if (event.target.dataset.filter === undefined) {
-            event.target.classList.toggle("gallery-button-pressed")
-            if (event.target.dataset.math === "add") {
-                event.target.dataset.math = "sub"
-                selectedFilters += 1
-                console.log(selectedFilters)
-                event.target.parentNode.firstChild.classList.remove("gallery-button-pressed")
-            } else if (event.target.dataset.math === "sub") {
-                event.target.dataset.math = "add"
-                selectedFilters -= 1
-                if (!selectedFilters) {
-                    event.target.parentNode.firstChild.classList.add("gallery-button-pressed")
-                }
-            }
-        } else {
-            event.target.classList.add("gallery-button-pressed")
-            for (let i=1; i<event.target.parentNode.childNodes.length; i++) {
-                event.target.parentNode.childNodes[i].classList.remove("gallery-button-pressed")
-            }
-            selectedFilters = 0
-        }
-    }
-
-
 
     return (
         <div className="gallery" id="gallery">
             <div className="gallery-buttons-wrapper">
                 <button
-                    className="gallery-button gallery-button-pressed"
+                    className="gallery-button"
                     data-filter="all"
-                    onClick={galleryButtonClick}
                 >
                     All
                 </button>
@@ -74,7 +44,6 @@ function Gallery({ works }) {
                         <GalleryButton
                             category={category}
                             regexSpace={regexSpace}
-                            onClick={galleryButtonClick}
                             key={index}
                         />
                     )

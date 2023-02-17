@@ -44,7 +44,7 @@ function Navigation() {
                 <img src="img/renan-logo.png" alt="Logo Renan" className="navigation-logo"/>
             </Link>
             <div className="navigation-tags">
-                {navPages.map((navPage, index) => <Link to={navPage.path} key={index}>{ navPage.link }</Link>)}
+                {navPages.map((navPage, index) => <Link to={navPage.path} key={index} className={`navigation-${navPage.link}`}>{ navPage.link }</Link>)}
             </div>
         </nav>
     )

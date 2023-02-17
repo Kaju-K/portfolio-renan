@@ -26,7 +26,7 @@ function Footer() {
             <Link to="/">
                 <img src="img/renan-image-horizontal.png" alt="Renan Kogut" className="footer-image"></img>
             </Link>
-            <h4 className="footer-text">&#169; Copyright 2023. All Rights Reserved. Made by <a href="/#">Marcelo Kogut</a></h4>
+            <h4 className="footer-text">&#169; Copyright 2023. All Rights Reserved. Made by <a href="https://marcelokogut.com" target="_blank" rel="noreferrer">Marcelo Kogut</a></h4>
             <div className="footer-social-medias">
                 <a href="/#" ><AiOutlineTwitter className="social-media" /></a>
                 <a href="/#" ><AiFillLinkedin className="social-media" /></a>

@@ -1,5 +1,7 @@
+import DemoreelComponent from "../components/DemoreelComponent"
+
 function Demoreel() {
-    return 
+    return <DemoreelComponent />
 }
 
 export default Demoreel

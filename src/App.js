@@ -12,12 +12,14 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import About from './pages/About';
 import Contact from './pages/Contact';
-// import works from "./data/jobs.json"
+import Demoreel from './pages/Demoreel';
+import Job from './pages/Job';
+
+import works from "./data/jobs.json"
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: (
       <>
       <Navigation />
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />
       },
+      {
+        path: "/demoreel",
+        element: <Demoreel />
+      },
+      {
+        path: "/:jobTitle",
+        element: <Job works={works} />,
+      }
     ],
   }
 ])
