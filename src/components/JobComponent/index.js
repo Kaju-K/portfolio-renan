@@ -1,24 +1,34 @@
 import { useParams } from "react-router-dom"
 import "./JobComponent.css"
 
-function JobComponent( {works} ) {
+function JobComponent( { works, regexSpecialCharacters } ) {
     const params = useParams()
     const jobTitle = params.jobTitle
 
-    const regexSpecialCharacters = /["?]|\| /g
-    
-    for (let i = 0; i < works.length; i++) {
-        let urlWork = works[i].title.toLowerCase().replace(regexSpecialCharacters, "").replace(/ /g, "_")
-        if ( urlWork === jobTitle) {
+    const validUrl = works.filter( work => work.title.toLowerCase().replace(regexSpecialCharacters, "").replace(/ /g, "_") === jobTitle)
+
+    if (!validUrl.length) {
+        throw new Error("page doesn't exist")
+    }
+
+    return (
+        <>
+            { validUrl.map( (filteredWork, index) => {
             return (
-                <section className="job-page">
-                    { works[i].description }
+                <section className="job-page" key={index}>
+                    <h2 className="job-title">{ filteredWork.title.toUpperCase() }</h2>
+                    <h3 className="job-client">{ filteredWork.client } - { filteredWork.year }</h3>
+                    <div className="job-tags">{ filteredWork.tags.map( (tag, index) => {
+                        return (
+                            <h4 key={index}>{ tag }</h4>
+                        )
+                    })}</div>
+                    <div className="job-description" dangerouslySetInnerHTML={{__html: filteredWork.description}}></div>
                 </section>
             )
-        }
-    }
-    throw new Error("page not exist")
-
+            }) }
+        </>
+    )
 }
 
 export default JobComponent

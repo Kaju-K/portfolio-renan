@@ -3,7 +3,8 @@ import './App.css';
 import { 
   createBrowserRouter,
   Outlet,
-  RouterProvider
+  RouterProvider,
+  ScrollRestoration
 } from 'react-router-dom';
 import Root from './pages/Root';
 import ErrorPage from './pages/ErrorPage';
@@ -17,6 +18,7 @@ import Job from './pages/Job';
 
 import works from "./data/jobs.json"
 
+const regexSpecialCharacters = /["?]|\| /g
 
 const router = createBrowserRouter([
   {
@@ -25,13 +27,16 @@ const router = createBrowserRouter([
       <Navigation />
       <Outlet />
       <Footer />
+      <ScrollRestoration />
       </>
     ),
     errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element: <Root />
+        element: <Root
+          regexSpecialCharacters={regexSpecialCharacters}
+        />
       },
       {
         path: "/about",
@@ -47,7 +52,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/:jobTitle",
-        element: <Job works={works} />,
+        element: <Job
+          works={works}
+          regexSpecialCharacters={regexSpecialCharacters}
+        />,
       }
     ],
   }

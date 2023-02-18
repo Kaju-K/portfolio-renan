@@ -4,7 +4,7 @@ import "./Gallery.css"
 import Work from "../Work";
 import GalleryButton from "../GalleryButton";
 
-function Gallery({ works }) {
+function Gallery( { works, regexSpecialCharacters} ) {
     const categoriesSet = new Set()
     for (let i=0; i < works.length; i++) {
         works[i].tags.forEach(category => {
@@ -12,8 +12,6 @@ function Gallery({ works }) {
         });
     }
     const categories = [...categoriesSet].sort()
-
-    const regexSpace = / /g;
 
     useEffect(() => {
         mixitup(".videos", {
@@ -43,7 +41,6 @@ function Gallery({ works }) {
                     return (
                         <GalleryButton
                             category={category}
-                            regexSpace={regexSpace}
                             key={index}
                         />
                     )
@@ -54,8 +51,8 @@ function Gallery({ works }) {
                     return (
                         <Work 
                             work={ work } 
-                            key={ work.id } 
-                            regexSpace={regexSpace}
+                            key={ work.id }
+                            regexSpecialCharacters={regexSpecialCharacters}
                         />
                     ) 
                 })}

@@ -1,5 +1,37 @@
 .job-page {
     background-color: #101010;
     padding-top: 115px;
+    text-align: center;
     color: #c0c0c0;
+}
+
+.job-title {
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem 0;
+    font-weight: 200;
+}
+
+.job-client {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.job-description {
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: justify;
+    line-height: 1.7rem;
+    padding: 0 3rem;
+}
+
+.job-description b {
+    font-weight: 700;
+}
+
+.job-description a {
+    color: white;
+    font-weight: 500;
 }
