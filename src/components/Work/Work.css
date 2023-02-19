@@ -15,25 +15,27 @@
     height: 100%;
     background-color: #101010;
     opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
     color: white;
     gap: 0.5rem;
     text-align: center;
     font-weight: 500;
 }
 
-.video-hover h3 {
-    font-size: 1.5rem;
-    margin: 0;
+.hover-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 1rem;
 }
 
-.video-hover h4 {
+.hover-title {
+    font-size: 1.5rem;
+}
+
+.hover-description {
     font-size: 0.8rem;
-    margin: 0;
 }
 
 .videos a:hover .video-hover {

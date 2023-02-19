@@ -3,6 +3,13 @@
     padding-top: 115px;
     text-align: center;
     color: #c0c0c0;
+    padding-bottom: 2rem;
+}
+
+.job-page-container {
+    max-width: 804px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .job-title {
@@ -16,15 +23,28 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: white;
+    margin: 1rem 0 ;
+}
+
+.job-tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0 3rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.job-tag {
+    padding: 0.5rem 1rem;
+    border: 1px solid #656565;
+    color: #656565;
+    border-radius: 25px;
 }
 
 .job-description {
-    max-width: 800px;
-    margin: 0 auto;
-    box-sizing: border-box;
     text-align: justify;
     line-height: 1.7rem;
-    padding: 0 3rem;
 }
 
 .job-description b {

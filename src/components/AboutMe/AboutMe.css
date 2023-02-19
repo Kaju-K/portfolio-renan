@@ -3,6 +3,12 @@
     text-align: center;
     padding-top: 115px;
     color: #c0c0c0;
+    padding-bottom: 2rem;
+}
+
+.about-me-container {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .about-me__photo {
@@ -11,8 +17,6 @@
 }
 
 .about-me-description {
-    max-width: 800px;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -28,6 +32,7 @@
     font-size: 1.6rem;
     font-weight: 700;
     color: #ff6a2f;
+    line-height: 2.5rem;
     padding: 0 3rem;
 }
 

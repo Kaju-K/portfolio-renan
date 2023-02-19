@@ -1,0 +1,35 @@
+.job-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.job-preview iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.job-video-container {
+    width: 100%;
+}
+
+.job-video-preview {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.job-image-container {
+    width: 100%;
+}
+
+.job-image-preview {
+    width: 100%;
+}
+
+.job-image-title, .job-video-title {
+    color: #ff6a2f;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}

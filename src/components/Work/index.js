@@ -9,8 +9,10 @@ function Work({work, regexSpecialCharacters}) {
     return (
         <Link to={workUrl} className={ nameClass }>
             <div className="video-hover">
-                <h3>{ work.title }</h3>
-                <h4>{ work.client } - { work.year }</h4>
+                <div className="hover-container">
+                    <h3 className="hover-title">{ work.title }</h3>
+                    <h4 className="hover-description">{ work.client } - { work.year }</h4>
+                </div>
             </div>
             <video muted autoPlay loop playsInline poster={work.firstSrc}>
                 <source src={srcVideo}></source>
