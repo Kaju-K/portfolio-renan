@@ -19,7 +19,7 @@ function Gallery( { works, regexSpecialCharacters} ) {
             target: ".video",
           },
           controls: {
-            toggleLogic: "or",
+            toggleLogic: "and",
           },
           animation: {
             effects: 'fade translateX(-100px)',
