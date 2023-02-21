@@ -14,8 +14,8 @@ function Work({work, regexSpecialCharacters}) {
                     <h4 className="hover-description">{ work.client } - { work.year }</h4>
                 </div>
             </div>
-            <video muted autoPlay loop playsInline poster={work.firstSrc}>
-                <source src={srcVideo}></source>
+            <video muted autoPlay loop playsInline poster={work.firstSrc} src={srcVideo}>
+                <source src={srcVideo} type={"video/mp4"}></source>
             </video>
         </Link>
     )

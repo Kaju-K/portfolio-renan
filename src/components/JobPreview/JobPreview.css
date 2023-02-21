@@ -14,22 +14,37 @@
     width: 100%;
 }
 
-.job-video-preview {
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-
 .job-image-container {
     width: 100%;
 }
 
-.job-image-preview {
+.job-image-preview, .job-video-preview {
     width: 100%;
 }
 
-.job-image-title, .job-video-title {
+.job-preview-title {
     color: #ff6a2f;
     font-size: 1.6rem;
     margin-bottom: 2rem;
     font-weight: 600;
+}
+
+.job-preview-title-deactiated {
+    display: none;
+}
+
+.job-preview-text {
+    margin-bottom: 2rem;
+}
+
+.job-preview-text a {
+    color: white;
+}
+
+.job-preview-text a:hover {
+    color: #ff6a2f;
+}
+
+.job-preview-text-deactivated {
+    display: none;
 }

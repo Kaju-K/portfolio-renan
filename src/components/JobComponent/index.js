@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom"
+import JobNavigation from "../JobNavigation"
 import JobPreview from "../JobPreview"
 import "./JobComponent.css"
 
@@ -27,6 +28,11 @@ function JobComponent( { works, regexSpecialCharacters } ) {
                 <div className="job-description" dangerouslySetInnerHTML={{__html: filteredWork.description}}></div>
                 <JobPreview
                     filteredWork={filteredWork}
+                />
+                <JobNavigation
+                    works={works}
+                    filteredWork={filteredWork}
+                    regexSpecialCharacters={regexSpecialCharacters}
                 />
             </div>
         </section>
