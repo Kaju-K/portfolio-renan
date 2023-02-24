@@ -27,7 +27,16 @@ const router = createBrowserRouter([
       <Navigation />
       <Outlet />
       <Footer />
-      <ScrollRestoration />
+      <ScrollRestoration
+        getKey={(location, matches) => {
+          const path=["/"]
+          return path.includes(location.pathname)
+            ?
+            location.pathname 
+            :
+            location.key
+        }}
+      />
       </>
     ),
     errorElement: <ErrorPage />,

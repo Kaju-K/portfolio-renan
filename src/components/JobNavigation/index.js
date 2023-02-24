@@ -5,10 +5,8 @@ import { Link } from "react-router-dom"
 function JobNavigation( { filteredWork, works, regexSpecialCharacters } ) {
     const nextVideo = works.filter( work => work.id === filteredWork.next )[0]
     const previousVideo = works.filter( work => work.id === filteredWork.previous )[0]
-    // change for useState \/
     let previousWorkUrl
     let nextWorkUrl
-    // change for useState ^
 
     if(previousVideo) {
         previousWorkUrl = previousVideo.title.toLowerCase().replace(regexSpecialCharacters, "").replace(/ /g, "_")
