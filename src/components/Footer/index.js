@@ -28,10 +28,10 @@ function Footer() {
             </Link>
             <h4 className="footer-text">&#169; Copyright 2023. All Rights Reserved. Made by <a href="https://marcelokogut.com" target="_blank" rel="noreferrer">Marcelo Kogut</a></h4>
             <div className="footer-social-medias">
-                <a href="/#" ><AiOutlineTwitter className="social-media" /></a>
-                <a href="/#" ><AiFillLinkedin className="social-media" /></a>
-                <a href="/#" ><AiOutlineInstagram className="social-media" /></a>
-                <a href="/#" ><AiFillYoutube className="social-media" /></a>
+                <a href="https://twitter.com/kogut_r" target={"_blank"} rel={"noreferrer"} ><AiOutlineTwitter className="social-media" /></a>
+                <a href="https://www.linkedin.com/in/renankogut/" target={"_blank"} rel={"noreferrer"}><AiFillLinkedin className="social-media" /></a>
+                <a href="https://www.instagram.com/_kogut_r/" target={"_blank"} rel={"noreferrer"} ><AiOutlineInstagram className="social-media" /></a>
+                <a href="https://www.youtube.com/c/kogut_r" target={"_blank"} rel={"noreferrer"} ><AiFillYoutube className="social-media" /></a>
             </div>
             <a href="#top" className="footer-arrow-up" style={cssArrowUp}>
                 <BsArrowUpCircle size={"2.5rem"} />
